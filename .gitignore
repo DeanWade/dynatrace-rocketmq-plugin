@@ -4,3 +4,5 @@
 .project
 *.prefs
 /.idea/
+dependency-reduced-pom.xml
+dynatrace-rocketmq-plugin.iml
