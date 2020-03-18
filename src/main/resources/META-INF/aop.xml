@@ -1,0 +1,13 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+	<weaver>
+		<!-- only weave classes in our application-specific packages -->
+		<include within="org.apache.rocketmq.client..*" />
+		<include within="org.apache.rocketmq.spring..*" />
+		<include within="com.example..*" />
+	</weaver>
+	<aspects>
+		<!-- weave in just this aspect -->
+		<aspect name="com.dynatrace.oneagent.plugin.rocketmq.RocketMQAspect" />
+	</aspects>
+</aspectj>
